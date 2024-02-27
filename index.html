@@ -1,30 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WebSocket Client</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <form id="inputForm">
-    <input type="text" id="textInput" placeholder="Type something...">
-    <button type="submit">Submit</button>
-  </form>
-  
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const form = document.getElementById('inputForm');
-        const inputField = document.getElementById('textInput');
-
-        const ws = new WebSocket('ws://localhost:8080');
-
-        form.addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent form submission
-
-            const inputValue = inputField.value;
-            ws.send(inputValue); // Send input value to server through WebSocket
-        });
-    });
-  </script>
+    <div class="container">
+        <h1>Form Submission</h1>
+        <form id="inputForm" action="/submit" method="post">
+            <input type="text" id="textInput" name="inputData" placeholder="Type something...">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
