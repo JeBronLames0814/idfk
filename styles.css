@@ -46,3 +46,25 @@ button {
 button:hover {
     background-color: #3944c1;
 }
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 20px auto;
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    input[type="text"] {
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        border-radius: 5px;
+    }
+}
