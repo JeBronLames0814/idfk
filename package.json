@@ -1,0 +1,25 @@
+{
+  "name": "idfk-main",
+  "version": "1.0.0",
+  "description": "help me please",
+  "main": "script.js",
+  "scripts": {
+    "test": "ls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeBronLames0814/idfk.git"
+  },
+  "keywords": [
+    "help"
+  ],
+  "author": "MatG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeBronLames0814/idfk/issues"
+  },
+  "homepage": "https://github.com/JeBronLames0814/idfk#readme",
+  "dependencies": {
+    "ws": "^8.16.0"
+  }
+}
